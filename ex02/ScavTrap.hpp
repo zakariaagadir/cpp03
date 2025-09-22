@@ -7,7 +7,6 @@
 
 
 class ScavTrap : public ClapTrap {
-    private:
     public:
         ScavTrap(const std::string& nam);
         void guardGate();

@@ -15,6 +15,20 @@ void ScavTrap::guardGate() {
 }
 
 
+void    ScavTrap::attack(const std::string& target){
+    if (this->gethpoints() <= 0) {
+        std::cout << "ScavTrap " << this->getname() << " cannot attack, it has no hit points left!" << std::endl;
+        return;
+    }
+    if (this->getepoints() <= 0) {
+        std::cout << "ScavTrap " << this->getname() << " cannot attack, it has no energy points left!" << std::endl;
+        return;
+    }
+
+    this->setepoints(getepoints() - 1);
+    std::cout << "ScavTrap " << this->getname() << " attacks " << target << ", causing " << this->getadamage() << " points of damage!" << std::endl;
+}
+
 ScavTrap::~ScavTrap(){
     std::cout<<"ScavTrap deconstructor called" << std::endl;
 }

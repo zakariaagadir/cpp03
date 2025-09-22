@@ -8,7 +8,7 @@
 
 int main() {
     // Test ScavTrap's constructor and inherited behavior
-    ScavTrap scavTrap1("SC4V-TP");
+    ScavTrap scavTrap1("brahim");
     std::cout << "---" << std::endl;
 
     // Test a unique ScavTrap method
@@ -18,7 +18,7 @@ int main() {
 
     // Test inherited functionality
     std::cout << "Testing inherited ClapTrap functions:" << std::endl;
-    scavTrap1.attack("an intruder");
+    scavTrap1.attack("youssef");
     scavTrap1.takeDamage(5);
     scavTrap1.beRepaired(2);
     std::cout << "---" << std::endl;

@@ -11,12 +11,12 @@ FragTrap::FragTrap(const std::string& nam):ClapTrap(nam){
 }
 
 void FragTrap::highFivesGuys(void) {
-    std::cout << "FragTrap " << this->getname() << " is now in Gate keeper mode." << std::endl;
+    std::cout << "FragTrap " << this->getname() << " requests a high five!" << std::endl;
 }
 
 
 FragTrap::~FragTrap(){
-    std::cout << "FragTrap " << this->getname() << " requests a high five!" << std::endl;
+    std::cout<< "FragTrap Destructor called" << std::endl;
 }
 
 
